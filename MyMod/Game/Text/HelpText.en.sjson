@@ -1,0 +1,19 @@
+{
+  Texts = [
+    "_append"
+    {
+      Id = "MyModTrait"
+      DisplayName = "Old Feather"
+      Description = "Restores {#AltUpgradeFormat}5{!Icons.HealthUp_Small}{#PreviousFormat} health when you exit a chamber."
+    }
+    {
+      Id = "MyModTrait_Rack"
+      InheritFrom = "MyModTrait"
+      Description = "Restores {#AltUpgradeFormat}5{!Icons.HealthUp_Small}{#PreviousFormat} health when you exit a chamber. \n\n\n {#AwardFlavorFormat}{$TooltipData.SignoffText}"
+    }
+    {
+      Id = "MyModSignoff"
+      DisplayName = "From your bed"
+    }
+  ]
+}
