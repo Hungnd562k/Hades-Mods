@@ -7,3 +7,11 @@ GiftData.MyModNpc =
     InheritFrom = {"DefaultGiftData"},
     [1] = { Gift = "MyModTrait" },
 }
+
+table.insert(GiftOrdering, "IncreaseCritChance")
+
+GiftData.GodOfSexUpgrade =
+{
+    InheritFrom = {"DefaultGiftData"},
+    [1] = { Gift = "IncreaseCritChance" },
+}

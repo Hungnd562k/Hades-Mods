@@ -35,3 +35,39 @@ TraitData.MyModTrait =
 		}
 	},
 }
+
+TraitData.IncreaseCritChance = 
+{
+    Icon = "Keepsake_Collar",
+    EquipSound = "/SFX/Menu Sounds/KeepsakeCerberusCollar",
+    InheritFrom = { "GiftTrait" },
+    InRackTitle = "MyModTrait_Rack",
+    MyModTraitValue = 5,
+    SignOffData =
+	{
+	  {
+		Text = "MyModSignoff"
+	  }
+	},
+    PropertyChanges =
+    {
+        {
+            LuaProperty = "MaxHealth",
+            BaseValue = 500,
+            AsInt = true,
+            ChangeType = "Add",
+            MaintainDelta = true,
+            ExtractValue =
+            {
+                ExtractAs = "TooltipHealth",
+            }
+        },
+    },
+    ExtractValues =
+	{
+		{
+			Key = "MyModTraitValue",
+			ExtractAs = "TooltipHeal"
+		}
+	},
+}
